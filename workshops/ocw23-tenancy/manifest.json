@@ -33,7 +33,7 @@
             "filename": "../../simulate-patch/simulate-patch.md"
         },
 		{
-            "title": "Lab 5: Modify Helidon application to add Object Storage support",
+            "title": "Lab 5: Modify Helidon application for Object Storage integration",
             "type": "freetier",
             "filename": "../../os-support/os-support.md"
         },

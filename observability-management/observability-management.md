@@ -2,7 +2,9 @@
 
 ## Introduction
 
+In this lab, you will verify the succesful deployment of the Helidon application. Also, you will explore the logs and metrics explorer service.
 
+Estimated time: 10 minutes
 
 ### About Product/Technology
 
@@ -12,11 +14,15 @@
 
 In this lab, you will:
 
-* 
+* Verify the successful deployment of Helidon application.
+* Explore OCI Metric Explorer
+* Explore OCI Logging service
+* Validate liveness and readiness of Helidon application
 
 ### Prerequisites
 
-* 
+* An Oracle Free Tier(Trial), Paid or LiveLabs Cloud Account
+* Familiarity with OCI console
 
 ## Task 1: Access the Helidon application
 

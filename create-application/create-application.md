@@ -2,17 +2,24 @@
 
 ## Introduction
 
+This lab walks you through the steps to create Helidon MP appliation using Helidon CLI. Also, you will modify the Helidon application to show its integration with OCI Logging and Monitoring services.
 
+Estimated time: 10 minutes
 
 ### Objectives
 
 In this lab, you will:
 
-* 
+* Download the Helidon CLI
+* Generate Helidon MP application using Helidon CLI
+* Perform integration with OCI Logging and Metrics service
+* Push the application code to OCI Code repository
+* Trigger the DevOps pipeline
 
 ### Prerequisites
 
-* 
+* An Oracle Free Tier(Trial), Paid or LiveLabs Cloud Account
+* Familiarity with git commands
 
 ## Task 1:Download Helidon CLI
 

@@ -2,6 +2,7 @@
 
 ## Introductions
 
+This lab will attempt to simulate a patching scenario. Take a case where initial environment uses OpenJDK for testing and eventually moves to use OracleJDK when it is ready for production. The previous build and deployment pipeline already sets OpenJDK 20 as the Java flavor to use. In this lab, it will be replaced with Oracle JDK 20.
 
 Estimated time: 10 minutes
 
@@ -9,11 +10,12 @@ Estimated time: 10 minutes
 
 In this lab, you will:
 
-* 
+* Modify the JDK flavour
+* Verify the JDK new flavour in deployment pipeline
 
 ### Prerequisites
 
-* 
+* An Oracle Free Tier(Trial), Paid or LiveLabs Cloud Account
 
 ## Task 1: Change the JDK Installer
 

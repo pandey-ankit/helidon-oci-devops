@@ -2,7 +2,7 @@
 
 ## Introduction
 
-
+This lab walks you through the steps to clean up the OCI resource created in this workshop, when the environment is not needed.
 
 Estimated time: 15 minutes
 
@@ -10,11 +10,13 @@ Estimated time: 15 minutes
 
 In this lab, you will:
 
+* Destroy the resources created for DevOps project
+* Cleanup the compartment, dynamic groups, user groups and policies.
 
 
 ### Prerequisites
 
-* 
+* An Oracle Free Tier(Trial), Paid or LiveLabs Cloud Account
 
 ## Task 1: Destroy the resources created for DevOps project
 
