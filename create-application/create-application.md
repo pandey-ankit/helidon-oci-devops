@@ -25,6 +25,7 @@ In this lab, you will:
 
 
 
+
 ## Task 2: Generate a Helidon Microprofile application using Helidon CLI
 
 
@@ -33,11 +34,15 @@ In this lab, you will:
 
 
 
-## Task 4: Use git to upload the Helidon application code to the OCI Code repository in your devops project
+## Task 4: Generate an Authentication Token to push the code to OCI Code repository
 
 
 
-## Task 5: Trigger the DevOps pipeline
+## Task 5: Use git to upload the Helidon application code to the OCI Code repository in your devops project
+
+
+
+## Task 6: Trigger the DevOps pipeline
 
 
 
