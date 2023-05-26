@@ -2,7 +2,7 @@
 
 ## About this Workshop
 
-In this workshop, you will learn how to build, maintain, and upgrade a Helidon microservice app from start to finish using the OCI DevOps service. We'll demonstrate how to accelerate and streamline the entire lifecycle management process, utilizing JDK20 with Virtual Threads technology.
+In this workshop, you will learn how to build, maintain, and upgrade a **Helidon microservice application** from start to finish using the **OCI DevOps service**. We'll demonstrate how to accelerate and streamline the entire lifecycle management process, utilizing JDK20 with Virtual Threads technology.
 
 Estimated time: 5 minutes
 
@@ -11,10 +11,10 @@ Estimated time: 5 minutes
 In this workshop, you will:
 
 * Create a compartment, dynamic group and policies
-* Create a DevOps project and related resources using terraform
-* Build and deploy Helidon MP application to Compute Instance using OCI DevOps
+* Create a DevOps project and related resources using Terraform
+* Build and deploy Helidon MP application to Compute Instances using OCI DevOps
 * Show OCI Monitoring SDK integration
-* Validate OCI Logging SDK integration to push message to Logging service
+* Validate OCI Logging SDK integration to push messages to Logging service
 * Simulate a patching scenario
 * Add Object storage access from the Helidon MP application
 
