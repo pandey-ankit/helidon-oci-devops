@@ -88,6 +88,52 @@ The goal of this task is to prepare the environment for the DevOps setup by crea
 
 ## Task 3: Create a DevOps project and its resources
 
+1. In the terminal, copy and paste the following command to navigate to *main* folder.
+    ```bash
+    <copy>cd ~/devops_helidon_to_instance_ocw_hol/main/</copy>
+    ```
+
+2. Copy and paste the following command to update the *terraform.tfvars* inside *main* folder. This will update the value of `tenancy_ocid`, region, `user_ocid`.
+    ```bash
+    <copy>cp ../init/terraform.tfvars .</copy>
+    ```
+3. Copy and paste the following command to update the compartment_ocid of newly created compartment in  *terraform.tfvars* inside *main* folder. 
+    ```bash
+    <copy>.../utils/update_compartment.sh</copy>
+    ```
+
+4. Copy and paste the following command in terminal to provision all the DevOps resources.
+    ```bash
+    <copy>terraform init
+    terraform plan
+    terraform apply -auto-approve</copy>
+    ```
+
+    > This will provision the following resources required for DevOps:
+    * **OCI DevOps Service** 
+        * **OCI DevOps Project** that will contain all the DevOps components needed for this project.
+        * **OCI Code Repository** that will host the Application source code project.
+        * **DevOps Build Pipeline** with the following stages:
+            * **Manage Build** - executes steps to download JDK20, maven and building the Helidon application
+            * **Deliver Artifacts** - Uploads the built Helidon app and the Deployment to the Artifact Repository
+            * **Trigger Deployment** - Triggers the Deployment Pipeline
+        * **DevOps Deployment Pipeline** that will perform the following on the target environment:
+            * Download JDK20
+            * Install OCI CLI and use it to download the Application Deliverable
+            * Run the Application
+        * **DevOps Instance Group environment** that will be used by the Deployment Pipeline to identify the created OCI Compute Instance as the deployment target.
+        * **DevOps Trigger** that will invoke the pipeline lifecycle from start to finish when a push event occurs on the OCI Code Repository.
+    * **OCI Artifact Registry**
+        * **OCI Artifact Repository** that will host the built Helidon App Binaries and Deployment Manifest as versioned artifacts.
+    * **OCI Platfrom**
+        * **OCI Compute Instance** that opens port 8080 from the firewall. This is where the application will be eventually deployed.
+    * **OCI Virtual Cloud Network (VCN) with Security List** containing an Ingress that opens port 8080. Port 8080 is where the Helidon application will be accessed from. The OCI VCN will be used by the OCI Compute Instance for its network needs.
+
+5. Diagram below depicts how the DevOps setup will work:
+    ![devops diagram](images/devops-diagram.png)
+
+6. You will get the simliar output as shown below. You need to copy these values and paste it in a text file. So we can use it later in the workshop.
+    ![tf output](images/tf-output.png)
 
 
 You may now **proceed to the next lab.**
