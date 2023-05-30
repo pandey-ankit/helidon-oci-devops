@@ -89,7 +89,8 @@ In this lab, you will:
 
 3. Open a new terminal, Copy and paste the following command to **copy the build and deployment pipeline specs** from the *`devops_helidon_to_instance_ocw_hol`* folder.
     ```bash
-    <copy>cp ~/devops_helidon_to_instance_ocw_hol/pipeline_specs/* .</copy>
+    <copy>cd ~/oci-mp/
+    cp ~/devops_helidon_to_instance_ocw_hol/pipeline_specs/* .</copy>
     ```
 
 4. Add **.gitignore** so files and directories that are not needed to be part of the repository will be ignored by git.
@@ -142,7 +143,7 @@ In this step, we are going to generate an *Authentication Token*, that we will u
 
 ## Task 5: Use git to upload the Helidon application code to the OCI Code repository in your DevOps project
 
-1. The terminal should already be in the *oci-mp* directory, but if it is not, go inside that directory.
+1. Open a new terminal, Copy and paste the following command to navigate to the *oci-mp* directory.
     ```bash
     <copy>cd ~/oci-mp</copy>
     ```
@@ -207,16 +208,16 @@ In this step, we are going to generate an *Authentication Token*, that we will u
 3. Select the compartment, which you have created in **Lab 1** and then Click *devops-project-helidon-ocw-hol-string* to open the **DevOps Project**.
     ![select compartment](images/select-compartment.png)
 
-4. Under *Latest build history*, you will see the *runs* and Status as *Accepted/In Progress*. Click on the latest runs as shown below.
+4. Under *Latest build history*, you will see the *Runs* and Status as *Accepted/In Progress*. Click on the latest runs as shown below.
     ![build history](images/build-history.png)
 
-5. Once the build pipeline completed all three stages, you will see output as shown below.
+5. Once the build pipeline completed all three stages, you will see output as shown below. You can click the arrow just before the stages, to view, what action they are performing. This action, we have defind in *`build_spec.yaml`* file in *oci-mp* folder.
     ![build run first](images/build-run-first.png)
 
 6. In Build run progress, In the third stage, click on **Three dots** and then click **View deployment** as shown below. This will open the **deployment pipeline**. 
     ![view deployment](images/view-deployment.png)
 
-7. Here you can see *Deployment Progress*. Once you have the deployment pipeline completed, you will see the output as shown below.
+7. Here you can see *Deployment Progress*. Once you have the deployment pipeline completed, you will see the output as shown below. You can click the arrow just before the stage, to view, what action they are performing. This action, we have defind in *`deployment_spec.yaml`* file in *oci-mp* folder.
     ![deployment run](images/deployment-run.png)
 
     > This successfully deploys the Helidon application to **Compute instances** in OCI.
