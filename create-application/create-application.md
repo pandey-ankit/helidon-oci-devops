@@ -42,7 +42,7 @@ In this lab, you will:
      ```bash
     <copy>./helidon init</copy>
     ```
-2. When it prompts for the *Helidon version*, copy and paste the below value to the terminal. When you Click **Copy**, it just copy the **4.0.0-ALPHA6**, but we are showing the complete output.
+2. When it prompts for the *Helidon version*, copy and paste the below value to the terminal. When you click **Copy**, it just copy the **4.0.0-ALPHA6**, but we are showing the complete output.
     ```bash
     Helidon version (default: 3.2.0): <copy>4.0.0-ALPHA6</copy>
     ```
@@ -72,6 +72,8 @@ In this lab, you will:
     ```bash
     Java package name (default: me.username.mp.oci): <copy>ocw.hol.mp.oci</copy>
     ```
+
+7. When promted for *Start development loop? (default: n):*, press *Enter* to select the default value.
 
     > Once completed, this will generate an **oci-mp** project.
 

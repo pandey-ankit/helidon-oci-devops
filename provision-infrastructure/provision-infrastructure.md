@@ -99,7 +99,7 @@ The goal of this task is to prepare the environment for the DevOps setup by crea
     ```
 3. Copy and paste the following command to update the **compartment_ocid** of a newly created compartment in  *terraform.tfvars* inside *main* folder. 
     ```bash
-    <copy>.../utils/update_compartment.sh</copy>
+    <copy>../utils/update_compartment.sh</copy>
     ```
 
 4. Copy and paste the following command in the terminal to provision all the DevOps resources.
