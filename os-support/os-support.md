@@ -19,6 +19,8 @@ In this lab, you will:
 
 ## Task 1: Modify the Helidon application for Object Storage integration
 
+1. Verify that **oci.bucket.name** is configured properly in **~/oci-mp/server/src/main/resources/META-INF/microprofile-config.properties** which should have already been set in step 5 of Lab 2/Task 3.
+
 1. In **Code Editor**, click the file name **`pom.xml`** under *~/oci-mp/server/* to open it and add the **Object Storage OCI SDK** dependency inside the **dependencies** clause as shown below.
     ```bash
     <copy><dependency>
@@ -36,7 +38,7 @@ In this lab, you will:
     ```
     ![object storage added](images/os-added.png)
 
-    > **MANDATORY TO BE READ:-**
+    > **Please Read:-**
     * From the constructor's argument section, added the *ObjectStorage objectStorageClient* parameter. Since this is part of *@Injected* annotation, the parameter will automatically be processed and set by Helidon to contain the client which can be used to communicate with the Object Storage service without having to add several lines of **OCI SDK** code for that purpose.
     * From the same constructor's argument section, added **ConfigProperty** which will extract value from an **oci.bucket.name** property in the configuration. This has earlier been populated in **microprofile-config.properties** during the initial application setup when a utility script called **`update_config_values.sh`** was executed from the **`devops_helidon_to_instance_ocw_hol`** repository directory.
     * Using **getNamespace() Object Storage SDK** method, retrieve the Object Storage's namespace as it will be used later to retrieve or store an object:
