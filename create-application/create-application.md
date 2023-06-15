@@ -239,6 +239,13 @@ In this step, we are going to generate an *Authentication Token*, that we will u
 
 You may now **proceed to the next lab.**
 
+## Learn More
+
+* [Helidon CLI](https://helidon.io/docs/v3/#/about/cli)
+* [Helidon MP Quick Start Guide](https://helidon.io/docs/v3/#/mp/guides/quickstart)
+* [Helidon MP Config Sources](https://helidon.io/docs/v3/#/mp/config/advanced-configuration)
+* [Helidon MP Config Sources](https://helidon.io/docs/v3/#/mp/guides/config)
+
 ## Acknowledgements
 
 * **Author** -  Keith Lustria

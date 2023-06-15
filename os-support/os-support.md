@@ -196,6 +196,10 @@ Test by using curl and check that a new **hello.txt** object has been added to t
 
 **Congratulations!** You have completed the Workshop. If you want you can proceed with **Lab 6**, which **deletes all the resources** created during this workshop.
 
+## Learn More
+
+* [Helidon OCI integration](https://helidon.io/docs/v3/#/mp/integrations/oci)
+
 ## Acknowledgements
 
 * **Author** -  Keith Lustria
